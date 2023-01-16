@@ -1,0 +1,18 @@
+// /home/michal/zephyrproject/bmp280bl/build/zephyr/zephyr_pre0.elf
+digraph "Device dependency graph" {
+	68 [label="clock@40000000\nOrdinal: 68 | Handle: 1\n/soc/clock@40000000"]
+	11 [label="gpio@50000300\nOrdinal: 11 | Handle: 2\n/soc/gpio@50000300"]
+	9 [label="gpio@50000000\nOrdinal: 9 | Handle: 3\n/soc/gpio@50000000"]
+	90 [label="random@4000d000\nOrdinal: 90 | Handle: 4\n/soc/random@4000d000"]
+	4 [label="entropy_bt_hci\nOrdinal: 4 | Handle: 5\n/entropy_bt_hci"]
+	104 [label="uart@40002000\nOrdinal: 104 | Handle: 6\n/soc/uart@40002000"]
+	79 [label="i2c@40004000\nOrdinal: 79 | Handle: 7\n/soc/i2c@40004000"]
+	117 [label="i2c@40003000\nOrdinal: 117 | Handle: 8\n/soc/i2c@40003000"]
+	111 [label="flash-controller@4001e000\nOrdinal: 111 | Handle: 9\n/soc/flash-controller@4001e000"]
+	96 [label="spi@40023000\nOrdinal: 96 | Handle: 10\n/soc/spi@40023000"]
+	10 [label="vdd-env\nOrdinal: 10 | Handle: 11\n/vdd-env"]
+	118 [label="bme280@77\nOrdinal: 118 | Handle: 12\n/soc/i2c@40003000/bme280@77"]
+	98 [label="temp@4000c000\nOrdinal: 98 | Handle: 13\n/soc/temp@4000c000"]
+	9 -> 10
+	117 -> 118
+}
